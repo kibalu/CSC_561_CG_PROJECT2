@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prog 2: Rasterization Shell</title>
+
+    <script type="text/javascript" src="gl-matrix-min.js"></script>
+    <script type="text/javascript" src="rasterize.js"></script>
+  </head>
+
+  <body onload="main();">
+    <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+     <ul>
+<li>a&nbsp;and&nbsp;d &#8212;&nbsp;translate view left and right along view X</li>
+<li>w&nbsp;and&nbsp;s&nbsp;&#8212; translate view forward and backward along view Z</li>
+<li>q&nbsp;and&nbsp;e&nbsp;&#8212; translate view up and down along view Y</li>
+<li>A&nbsp;and&nbsp;D &#8212;&nbsp;rotate view left and right around view Y (yaw)</li>
+<li>W&nbsp;and&nbsp;S&nbsp;&#8212; rotate view forward and backward around view X (pitch)</li>
+<li>Q&nbsp;and&nbsp;E&nbsp;&#8212; rotate selection (counter-)clockwise around view Z (roll)</li>
+<li>escape &#8212;&nbsp;undo all view changes; restore default view</li>
+<li>left&nbsp;and right&nbsp;&#8212; select and highlight the next/previous triangle set (previous off)</li>
+<li>up and down&nbsp;&#8212; select and highlight the next/previous sphere (previous off)</li>
+<li>space&nbsp;&#8212; deselect and turn off highlight</li>
+<li>k&nbsp;and ; &#8212; translate selection left and right along view X</li>
+<li>o&nbsp;and l &#8212; translate selection&nbsp;forward and backward along view Z</li>
+<li>i and p&nbsp;&#8212; translate selection&nbsp;up and down along view Y</li>
+<li>K&nbsp;and&nbsp;: &#8212;&nbsp;rotate selection&nbsp;left and right around view Y (yaw)</li>
+<li>O&nbsp;and&nbsp;L&nbsp;&#8212; rotate selection&nbsp;forward and backward around view X (pitch)</li>
+<li>I&nbsp;and&nbsp;P&nbsp;&#8212; rotate selection&nbsp;clockwise and counterclockwise around view Z (roll)</li>
+<li>backspace&nbsp;&#8212; undo all sphere and triangle transformations</li>
+</ul>
+  </body>
+</html>
